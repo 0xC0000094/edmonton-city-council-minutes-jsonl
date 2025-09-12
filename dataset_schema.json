@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Structured Public Meeting Minutes",
+  "type": "object",
+  "properties": {
+    "document_id": {
+      "type": "string",
+      "description": "Unique hash or identifier for the meeting document"
+    },
+    "filename": {
+      "type": "string",
+      "description": "Original file name of the meeting minutes document"
+    },
+    "members": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of members involved in the meeting"
+    },
+    "agenda_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section": { "type": ["string", "null"], "description": "Agenda section number if available" },
+          "title": { "type": "string", "description": "Agenda item title" },
+          "description": { "type": ["string", "null"], "description": "Agenda item description or notes" }
+        },
+        "required": ["title"]
+      },
+      "description": "List of agenda items covered in the meeting"
+    },
+    "document": {
+      "type": "string",
+      "description": "Path or reference to the original document"
+    },
+    "meeting_metadata": {
+      "type": "object",
+      "properties": {
+        "date": { "type": "string", "format": "date", "description": "Meeting date (ISO 8601)" },
+        "committee_name": { "type": "string", "description": "Name of the committee or meeting body" }
+      },
+      "required": ["date"]
+    },
+    "attendance": {
+      "type": "object",
+      "properties": {
+        "present": { "type": "array", "items": { "type": "string" } },
+        "present_for_a_portion": { "type": "array", "items": { "type": "string" } },
+        "absent_without_notice": { "type": "array", "items": { "type": "string" } },
+        "absent_with_notice": { "type": "array", "items": { "type": "string" } },
+        "absent_with_notice_for_portion": { "type": "array", "items": { "type": "string" } },
+        "absent_without_notice_for_portion": { "type": "array", "items": { "type": "string" } },
+        "absent_for_portion": { "type": "array", "items": { "type": "string" } },
+        "absent_for_portion_with_notice": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "extraction_metadata": {
+      "type": "object",
+      "properties": {
+        "processed_date": { "type": ["string", "null"], "format": "date-time" },
+        "stage": { "type": ["string", "null"] },
+        "confidence_score": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "extraction_method": { "type": ["string", "null"] },
+        "human_reviewed": { "type": "boolean" },
+        "reviewer": { "type": ["string", "null"] },
+        "flagged_issues": { "type": "array", "items": { "type": "string" } },
+        "source_sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "section": { "type": "string" },
+              "text": { "type": "string" }
+            }
+          }
+        },
+        "heuristic_roll_call": {
+          "type": "object",
+          "properties": {
+            "present": { "type": "array", "items": { "type": "string" } },
+            "present_for_a_portion": { "type": "array", "items": { "type": "string" } },
+            "absent_without_notice": { "type": "array", "items": { "type": "string" } },
+            "absent_with_notice": { "type": "array", "items": { "type": "string" } },
+            "absent_without_notice_for_portion": { "type": "array", "items": { "type": "string" } },
+            "absent_with_notice_for_portion": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    }
+  },
+  "required": ["document_id", "filename", "agenda_items", "meeting_metadata"]
+}

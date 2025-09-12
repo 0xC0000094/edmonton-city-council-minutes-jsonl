@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "Structured Public Meeting Minutes (JSONL)"
+message: "If you use this dataset, please cite it as below."
+type: dataset
+authors:
+  - family-names: "Ventura"
+    given-names: "James"
+    affiliation: "Independent Researcher"
+    orcid: "https://orcid.org/0009-0006-0907-2061"
+repository-code: "https://github.com/Ezkll/city-council-minutes-jsonl"
+license: "CC-BY-4.0"
+version: "1.0.0"
+date-released: "2025-09-11"
+url: "https://creativecommons.org/licenses/by/4.0/"
