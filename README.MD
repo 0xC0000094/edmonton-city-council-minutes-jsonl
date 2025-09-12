@@ -62,7 +62,7 @@ cd city-council-minutes-jsonl
 
 If you only need the data:
 
-* [Download JSONL File](https://github.com/Ezkll/city-council-minutes-jsonl)
+* [Download JSONL File](https://github.com/Ezkll/city-council-minutes-jsonl/tree/main/data)
 
 Save it somewhere on your computer and attach it to a GPT project or load it manually.
 
