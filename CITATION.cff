@@ -7,7 +7,7 @@ authors:
     given-names: "James"
     affiliation: "Independent Researcher"
     orcid: "https://orcid.org/0009-0006-0907-2061"
-repository-code: "https://github.com/Ezkll/city-council-minutes-jsonl"
+repository-code: "https://github.com/0xC0000094/edmonton-city-council-minutes-jsonl"
 license: "CC-BY-4.0"
 version: "1.0.0"
 date-released: "2025-09-11"
