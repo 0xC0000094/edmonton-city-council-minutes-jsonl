@@ -54,15 +54,15 @@ You have two ways to get the data:
 Includes the dataset, LICENSE, schema, and documentation.
 
 ```bash
-git clone https://github.com/Ezkll/city-council-minutes-jsonl
-cd city-council-minutes-jsonl
+git clone https://github.com/0xC0000094/edmonton-city-council-minutes-jsonl
+cd edmonton-city-council-minutes-jsonl
 ```
 
 ### **Option 2: Download the File Directly**
 
 If you only need the data:
 
-* [Download JSONL File](https://github.com/Ezkll/city-council-minutes-jsonl/tree/main/data)
+* [Download JSONL File](https://github.com/0xC0000094/edmonton-city-council-minutes-jsonl/tree/main/data)
 
 Save it somewhere on your computer and attach it to a GPT project or load it manually.
 
@@ -177,7 +177,7 @@ You may use, share, and modify it — even commercially — **as long as you pro
 
 **Please credit:**
 
-> **[James Ventura](https://github.com/Ezkll)**, creator of the *Structured Public Meeting Minutes (JSONL)* dataset.
+> **[James Ventura](https://github.com/0xC0000094)**, creator of the *Structured Public Meeting Minutes (JSONL)* dataset.
 
 ---
 
@@ -193,7 +193,7 @@ You may use, share, and modify it — even commercially — **as long as you pro
 
 If you use this dataset in research or software, cite it as:
 
-> James Ventura. (2025). *Structured Public Meeting Minutes (JSONL)* \[Dataset]. CC BY 4.0. [https://github.com/Ezkll/structured-public-meeting-minutes](https://github.com/Ezkll/structured-public-meeting-minutes)
+> James Ventura. (2025). *Structured Public Meeting Minutes (JSONL)* \[Dataset]. CC BY 4.0. [https://github.com/0xC0000094/edmonton-city-council-minutes-jsonl](https://github.com/0xC0000094/edmonton-city-council-minutes-jsonl)
 
 See [CITATION.cff](CITATION.cff) for a machine-readable version.
 
