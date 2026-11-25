@@ -41,7 +41,7 @@ Example record:
     "human_reviewed": false
   }
 }
-````
+```
 
 ---
 
@@ -172,7 +172,7 @@ Every answer must follow this exact structure:
 
 ## 📜 License & Attribution
 
-This dataset is licensed under **[CC BY 4.0](LICENSE.md)**.
+This dataset is licensed under **[CC BY 4.0](LICENSE.MD)**.
 You may use, share, and modify it — even commercially — **as long as you provide attribution**.
 
 **Please credit:**
